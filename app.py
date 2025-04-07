@@ -20,7 +20,6 @@ def today():
 	return "<p>{}</p>".format(today.strftime("%d.%m.%Y"))
 
 
-# route here 
 @app.route("/connect")
 def connect():
 	if "POSTGRES_HOST" in os.environ:
